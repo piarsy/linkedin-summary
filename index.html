@@ -147,6 +147,46 @@
     letter-spacing: 0.3px;
   }
 
+  /* Testimonials */
+  .testimonials { margin-bottom: 48px; }
+  .testimonial-item {
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .testimonial-item:last-of-type { border: none; }
+  .testimonial-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #444;
+    font-style: italic;
+    margin-bottom: 4px;
+  }
+  .testimonial-author {
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 0.3px;
+  }
+  .testimonial-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #777;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+  }
+  .testimonial-link:hover { color: #333; }
+
+  /* Podcast */
+  .podcast { margin-bottom: 48px; }
+  .podcast-intro {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+  .podcast-intro strong { color: #555; font-weight: 500; }
+
   /* Footer / Contact */
   footer { margin-top: 48px; }
   .contact-line {
@@ -178,7 +218,7 @@
     from { opacity: 0; transform: translateY(12px); }
     to { opacity: 1; transform: translateY(0); }
   }
-  header, .tagline, hr, .palette, .tools, .podcast, footer {
+  header, .tagline, hr, .palette, .tools, .testimonials, .podcast, footer {
     animation: fadeUp 0.6s ease both;
   }
   header { animation-delay: 0.0s; }
@@ -256,13 +296,30 @@
 
   <hr>
 
-  <section class="podcast">
+  <section class="testimonials">
+    <div class="section-label">Temoignages</div>
+    <div class="testimonial-item">
+      <p class="testimonial-text">"Pierre-Arnaud a structuré mon offre, défini une stratégie commerciale claire, et mis en place des actions concrètes."</p>
+      <p class="testimonial-author">Rémi Gomes — Directeur Général</p>
+    </div>
+    <div class="testimonial-item">
+      <p class="testimonial-text">"Capacité à analyser rapidement et précisément la situation, méthode rigoureuse, outils intellectuellement mobilisants."</p>
+      <p class="testimonial-author">Marion Dufranc — Directrice des Opérations</p>
+    </div>
+    <div class="testimonial-item">
+      <p class="testimonial-text">"Un dirigeant qui connaît le terrain ET qui maîtrise les outils modernes. Le mix est rare."</p>
+      <p class="testimonial-author">Karima A. — Innovation Management</p>
+    </div>
+    <a href="https://senja.io/p/piarsy/clients" class="testimonial-link" target="_blank" rel="noopener noreferrer">Voir tous les temoignages →</a>
+  </section>
+    <section class="podcast">
     <div class="section-label">Parole publique</div>
+    <p class="podcast-intro">Invite du podcast <strong>Outils du Manager</strong>, no 1 du management en France.</p>
     <a href="https://podcasts.apple.com/fr/podcast/394-hypersensibles-profil-z%C3%A8bre-force-ou-faiblesse/id307927669?i=1000643501790" class="podcast-link" target="_blank" rel="noopener noreferrer">
       <span class="icon">&#9654;</span>
       <span class="meta">
         <span class="episode">Hypersensibles, profil zebre : force ou faiblesse ?</span>
-        <span class="show">Outils du Manager</span>
+        <span class="show">Ep. 394 — Outils du Manager</span>
       </span>
     </a>
   </section>
