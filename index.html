@@ -74,12 +74,23 @@
   .palette {
     margin-bottom: 8px;
   }
-  .palette p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #444;
-    letter-spacing: 1px;
-    line-height: 2;
+  .palette-item {
+    display: flex;
+    gap: 16px;
+    align-items: baseline;
+    padding: 10px 0;
+  }
+  .palette-label {
+    font-size: 15px;
+    font-weight: 450;
+    color: #333;
+    min-width: 90px;
+    letter-spacing: 0.5px;
+  }
+  .palette-desc {
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 0.3px;
   }
 
   .tools {
@@ -234,7 +245,26 @@
   <div class="palette-block">
     <div class="section-label">Palette</div>
     <div class="palette">
-      <p>Commerce · Industrie · P&L<br>Management · Distribution</p>
+      <div class="palette-item">
+        <span class="palette-label">Commerce</span>
+        <span class="palette-desc">Strategie commerciale et performance</span>
+      </div>
+      <div class="palette-item">
+        <span class="palette-label">Industrie</span>
+        <span class="palette-desc">Production, operations, environnement industriel</span>
+      </div>
+      <div class="palette-item">
+        <span class="palette-label">P&L</span>
+        <span class="palette-desc">Pilotage economique et rentabilite</span>
+      </div>
+      <div class="palette-item">
+        <span class="palette-label">Management</span>
+        <span class="palette-desc">Equipes terrain, accompagnement, structuration</span>
+      </div>
+      <div class="palette-item">
+        <span class="palette-label">Distribution</span>
+        <span class="palette-desc">Reseaux B2B, developpement, constructeurs</span>
+      </div>
     </div>
   </div>
 
