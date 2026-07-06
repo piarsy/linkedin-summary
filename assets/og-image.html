@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px;
+    height: 627px;
+    background: #111418;
+    color: #e8e6e1;
+    font-family: "SF Pro Text", -apple-system, "Inter", system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .line {
+    position: absolute;
+    background: rgba(232, 230, 225, 0.06);
+  }
+  .line-h1 {
+    top: 80px; left: 60px; right: 60px;
+    height: 1px;
+  }
+  .line-h2 {
+    bottom: 80px; left: 60px; right: 60px;
+    height: 1px;
+  }
+  .line-v1 {
+    top: 60px; bottom: 60px; left: 100px;
+    width: 1px;
+  }
+  .line-v2 {
+    top: 60px; bottom: 60px; right: 100px;
+    width: 1px;
+  }
+  .name {
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: rgba(232, 230, 225, 0.4);
+  }
+  .main-title {
+    font-size: 52px;
+    font-weight: 300;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    color: #e8e6e1;
+    margin-bottom: 16px;
+  }
+  .subtitle {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(232, 230, 225, 0.3);
+  }
+  .bottom-tag {
+    position: absolute;
+    bottom: 100px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: rgba(232, 230, 225, 0.2);
+    text-transform: uppercase;
+  }
+  .accent {
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background: rgba(200, 180, 140, 0.3);
+    top: 50%;
+    left: 60px;
+  }
+  .accent2 {
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background: rgba(200, 180, 140, 0.3);
+    top: 50%;
+    right: 60px;
+  }
+</style>
+</head>
+<body>
+  <div class="line line-h1"></div>
+  <div class="line line-h2"></div>
+  <div class="line line-v1"></div>
+  <div class="line line-v2"></div>
+  <div class="accent"></div>
+  <div class="accent2"></div>
+  <div class="name">Pierre-Arnaud SY</div>
+  <div class="main-title">Executive Summary</div>
+  <div class="subtitle">Dirigeant operationnel</div>
+  <div class="bottom-tag">Palette · Outils · Temoignages · Podcast</div>
+</body>
+</html>
