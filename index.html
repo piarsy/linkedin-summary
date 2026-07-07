@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pierre-Arnaud SY</title>
-<meta property="og:title" content="Pierre-Arnaud SY - Executive Summary">
-<meta property="og:description" content="Dirigeant operationnel, commerce, industrie, P&L, management et outils IA. Une page premium pour comprendre le profil en quelques secondes.">
+<meta property="og:title" content="Pierre-Arnaud SY">
+<meta property="og:description" content="Direction générale. Opérations. Développement.">
 <meta property="og:image" content="https://piarsy.github.io/linkedin-summary/assets/thumbnail.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
@@ -47,14 +47,13 @@
   }
 
   .tagline {
-    font-size: 22px;
+    font-size: 36px;
     font-weight: 380;
-    line-height: 1.6;
-    color: #333;
+    line-height: 1.9;
+    color: #1a1a1a;
     margin-bottom: 80px;
     max-width: 420px;
   }
-  .tagline em { font-style: italic; color: #888; }
 
   hr {
     border: none;
@@ -81,38 +80,36 @@
     margin-bottom: 8px;
   }
   .palette-item {
-    display: flex;
-    gap: 16px;
-    align-items: baseline;
     padding: 10px 0;
   }
   .palette-label {
     font-size: 15px;
     font-weight: 450;
     color: #333;
-    min-width: 90px;
     letter-spacing: 0.5px;
-  }
-  .palette-desc {
-    font-size: 13px;
-    color: #999;
-    letter-spacing: 0.3px;
   }
 
-  .tools {
+  .capabilities {
     margin-bottom: 8px;
   }
-  .tools p {
+  .capability-item {
     font-size: 14px;
-    color: #666;
+    color: #555;
     letter-spacing: 0.5px;
-    line-height: 2;
+    padding: 7px 0;
   }
-  .tools-note {
-    font-size: 12px;
-    color: #bbb;
-    font-style: italic;
-    margin-top: 12px;
+
+  .ecosystem {
+    font-size: 11px;
+    color: #ccc;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+  }
+  .ecosystem-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ddd;
   }
 
   .testimonials { margin-bottom: 8px; }
@@ -180,6 +177,15 @@
     letter-spacing: 0.5px;
   }
 
+  .signature {
+    font-size: 13px;
+    color: #aaa;
+    font-style: italic;
+    font-weight: 350;
+    margin-bottom: 24px;
+    letter-spacing: 0.3px;
+  }
+
   footer {
     margin-top: 32px;
   }
@@ -197,19 +203,12 @@
     transition: border-color 0.2s, color 0.2s;
   }
   .contact-line a:hover { color: #333; border-bottom-color: #bbb; }
-  .footnote {
-    margin-top: 40px;
-    font-size: 10px;
-    color: #ddd;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
 
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(16px); }
     to { opacity: 1; transform: translateY(0); }
   }
-  header, .tagline, hr, .palette-block, .tools-block, .testimonials-block, .podcast-block, footer {
+  header, .tagline, hr, .palette-block, .tools-block, .testimonials-block, .podcast-block, .signature, footer {
     animation: fadeUp 0.6s ease both;
   }
   header { animation-delay: 0.0s; }
@@ -223,12 +222,13 @@
   hr.d4 { animation-delay: 0.45s; }
   .podcast-block { animation-delay: 0.5s; }
   hr.d5 { animation-delay: 0.55s; }
+  .signature { animation-delay: 0.58s; }
   footer { animation-delay: 0.6s; }
 
   @media (max-width: 480px) {
     .container { padding: 56px 24px 48px; }
     .name { font-size: 20px; letter-spacing: 4px; }
-    .tagline { font-size: 18px; }
+    .tagline { font-size: 28px; }
     .contact-line { flex-direction: column; gap: 8px; }
   }
 </style>
@@ -238,12 +238,12 @@
 
   <header>
     <div class="name">Pierre-Arnaud SY</div>
-    <div class="title">Dirigeant operationnel</div>
+    <div class="title">Direction générale · Opérations · Développement</div>
   </header>
 
   <div class="tagline">
-    Je dirige comme un manager.<br>
-    Je construis comme un <em>maker</em>.
+    Je dirige.<br>
+    Je construis.
   </div>
 
   <hr class="d1">
@@ -252,24 +252,19 @@
     <div class="section-label">Palette</div>
     <div class="palette">
       <div class="palette-item">
-        <span class="palette-label">Commerce</span>
-        <span class="palette-desc">Strategie commerciale et performance</span>
+        <span class="palette-label">Croissance</span>
       </div>
       <div class="palette-item">
-        <span class="palette-label">Industrie</span>
-        <span class="palette-desc">Production, operations, environnement industriel</span>
+        <span class="palette-label">Opérations</span>
       </div>
       <div class="palette-item">
-        <span class="palette-label">P&L</span>
-        <span class="palette-desc">Pilotage economique et rentabilite</span>
+        <span class="palette-label">Rentabilité</span>
       </div>
       <div class="palette-item">
-        <span class="palette-label">Management</span>
-        <span class="palette-desc">Equipes terrain, accompagnement, structuration</span>
+        <span class="palette-label">Leadership</span>
       </div>
       <div class="palette-item">
-        <span class="palette-label">Distribution</span>
-        <span class="palette-desc">Reseaux B2B, developpement, constructeurs</span>
+        <span class="palette-label">Réseaux</span>
       </div>
     </div>
   </div>
@@ -277,31 +272,33 @@
   <hr class="d2">
 
   <div class="tools-block">
-    <div class="section-label">Outils</div>
-    <div class="tools">
-      <p>NocoDB · n8n · Metabase · OpenCode<br>Cloudron · Cloudflare · Obsidian</p>
+    <div class="section-label">Transformation numérique</div>
+    <div class="capabilities">
+      <div class="capability-item">IA appliquée aux opérations</div>
+      <div class="capability-item">Automatisation des processus</div>
+      <div class="capability-item">Pilotage par la donnée</div>
+      <div class="capability-item">Systèmes décisionnels</div>
+      <div class="capability-item">Low-code & intégration métier</div>
     </div>
-    <p class="tools-note">+ Ceux que j'ai construits moi-meme.</p>
+    <div class="ecosystem">
+      <span class="ecosystem-label">Écosystème</span> · NocoDB · n8n · Metabase · OpenCode · Obsidian · Cloudflare · Cloudron
+    </div>
   </div>
 
   <hr class="d3 thick">
 
   <div class="testimonials-block">
-    <div class="section-label">Temoignages</div>
+    <div class="section-label">Témoignages</div>
     <div class="testimonials">
       <div class="testimonial-item">
         <p class="testimonial-text">"Il a structuré mon offre, défini une stratégie commerciale claire, et mis en place des actions concrètes."</p>
         <p class="testimonial-author">Rémi Gomes — Directeur Général</p>
       </div>
       <div class="testimonial-item">
-        <p class="testimonial-text">"Capacité à analyser rapidement et précisément la situation, méthode rigoureuse, outils intellectuellement mobilisants et large réseau."</p>
-        <p class="testimonial-author">Marion Dufranc — Directrice des Opérations</p>
-      </div>
-      <div class="testimonial-item">
         <p class="testimonial-text">"Calme, concentré et pragmatique. Une grande expérience terrain sur le plan du développement commercial et du management d'équipe."</p>
         <p class="testimonial-author">Anisse R'BIBE — Entrepreneur</p>
       </div>
-      <a href="https://senja.io/p/piarsy/clients" class="testimonial-link" target="_blank" rel="noopener noreferrer">Voir tous les temoignages →</a>
+      <a href="https://senja.io/p/piarsy/clients" class="testimonial-link" target="_blank" rel="noopener noreferrer">Voir tous les témoignages →</a>
     </div>
   </div>
 
@@ -309,11 +306,11 @@
 
   <div class="podcast-block">
     <div class="section-label">Parole publique</div>
-    <p class="podcast-intro">Invite du podcast <strong>Outils du Manager</strong>, no 1 du management en France.</p>
+    <p class="podcast-intro">Invité du podcast <strong>Outils du Manager</strong>, no 1 du management en France.</p>
     <a href="https://podcasts.apple.com/fr/podcast/394-hypersensibles-profil-z%C3%A8bre-force-ou-faiblesse/id307927669?i=1000643501790" class="podcast-link" target="_blank" rel="noopener noreferrer">
       <span class="icon">&#9654;</span>
       <span class="meta">
-        <span class="episode">Hypersensibles, profil zebre : force ou faiblesse ?</span>
+        <span class="episode">Hypersensibles, profil zèbre : force ou faiblesse ?</span>
         <span class="show">Ep. 394 — Outils du Manager</span>
       </span>
     </a>
@@ -321,12 +318,15 @@
 
   <hr class="d5">
 
+  <div class="signature">
+    Le terrain avant les présentations. Toujours.
+  </div>
+
   <footer>
     <div class="contact-line">
       <a href="mailto:pierre-arnaud.sy@hotmail.fr">pierre-arnaud.sy@hotmail.fr</a>
       <a href="https://linkedin.com/in/pierrearnaudsy" target="_blank" rel="noopener noreferrer">linkedin.com/in/pierrearnaudsy</a>
     </div>
-    <div class="footnote">Executive summary · GitHub Pages</div>
   </footer>
 
 </div>
