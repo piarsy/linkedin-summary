@@ -182,9 +182,32 @@
     color: #aaa;
     font-style: italic;
     font-weight: 350;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     letter-spacing: 0.3px;
   }
+
+  .booking-block {
+    margin-bottom: 32px;
+  }
+  .booking-text {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    margin-bottom: 12px;
+  }
+  .booking-link {
+    display: inline-block;
+    font-size: 12px;
+    color: #555;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 3px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .booking-link:hover { color: #1a1a1a; border-bottom-color: #777; }
 
   footer {
     margin-top: 32px;
@@ -208,7 +231,7 @@
     from { opacity: 0; transform: translateY(16px); }
     to { opacity: 1; transform: translateY(0); }
   }
-  header, .tagline, hr, .palette-block, .tools-block, .testimonials-block, .podcast-block, .signature, footer {
+  header, .tagline, hr, .palette-block, .tools-block, .testimonials-block, .podcast-block, .signature, .booking-block, footer {
     animation: fadeUp 0.6s ease both;
   }
   header { animation-delay: 0.0s; }
@@ -223,7 +246,8 @@
   .podcast-block { animation-delay: 0.5s; }
   hr.d5 { animation-delay: 0.55s; }
   .signature { animation-delay: 0.58s; }
-  footer { animation-delay: 0.6s; }
+  .booking-block { animation-delay: 0.6s; }
+  footer { animation-delay: 0.62s; }
 
   @media (max-width: 480px) {
     .container { padding: 56px 24px 48px; }
@@ -322,9 +346,13 @@
     Le terrain avant les présentations. Toujours.
   </div>
 
+  <div class="booking-block">
+    <p class="booking-text">Opportunité de direction, mission de transformation, projet IA opérationnel&nbsp;?</p>
+    <a href="https://www.cal.eu/piarsy/30min" class="booking-link" target="_blank" rel="noopener noreferrer">Planifier un échange de 30 min</a>
+  </div>
+
   <footer>
     <div class="contact-line">
-      <a href="mailto:pierre-arnaud.sy@hotmail.fr">pierre-arnaud.sy@hotmail.fr</a>
       <a href="https://linkedin.com/in/pierrearnaudsy" target="_blank" rel="noopener noreferrer">linkedin.com/in/pierrearnaudsy</a>
     </div>
   </footer>
