@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <style>
     * { box-sizing: border-box; }
+
     body {
+      position: relative;
       width: 1200px;
       height: 627px;
       margin: 0;
@@ -12,23 +14,112 @@
       background: #F1EFE8;
       color: #111A20;
       font-family: Lato, "Liberation Sans", Arial, sans-serif;
-      padding: 84px 110px;
     }
-    .axis { position: absolute; top: 0; bottom: 0; left: 510px; width: 1px; background: rgba(104, 117, 122, 0.28); }
-    .axis::before, .axis::after { content: ""; position: absolute; left: -7px; width: 11px; height: 11px; border: 2px solid #1E556B; border-radius: 50%; background: #F1EFE8; }
-    .axis::before { top: 154px; }
-    .axis::after { bottom: 154px; }
-    .eyebrow { margin: 0 0 24px; color: #1E556B; font-size: 17px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
-    h1 { width: 800px; margin: 0; font-size: 70px; font-weight: 900; letter-spacing: -0.05em; line-height: 0.94; }
-    .sub { margin: 30px 0 0; color: #48545A; font-size: 30px; font-weight: 700; }
-    .role { position: absolute; left: 620px; bottom: 98px; color: #1E556B; font-size: 18px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+
+    .left {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 690px;
+      padding: 88px 0 78px 104px;
+    }
+
+    .eyebrow,
+    .role {
+      margin: 0;
+      color: #1E556B;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 44px 0 32px;
+      font-size: 65px;
+      font-weight: 900;
+      letter-spacing: -0.055em;
+      line-height: 0.92;
+    }
+
+    .subline {
+      width: 470px;
+      margin: 0;
+      color: #48545A;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .role { position: absolute; bottom: 82px; }
+
+    .divider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 690px;
+      width: 1px;
+      background: rgba(104, 117, 122, 0.28);
+    }
+
+    .diagram {
+      position: absolute;
+      top: 88px;
+      right: 95px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 310px;
+    }
+
+    .node {
+      width: 310px;
+      padding: 17px 20px;
+      background: rgba(30, 85, 107, 0.06);
+      color: #111A20;
+      font-size: 27px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      text-align: center;
+    }
+
+    .node.accent { background: #1E556B; color: #FBFAF6; }
+
+    .arrow {
+      height: 48px;
+      color: #68757A;
+      font-size: 39px;
+      font-weight: 400;
+      line-height: 1.1;
+    }
+
+    .diagram-label {
+      margin: 26px 0 0;
+      color: #48545A;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
   </style>
 </head>
 <body>
-  <div class="axis"></div>
-  <p class="eyebrow">Pierre-Arnaud SY</p>
-  <h1>Relier stratégie,<br>terrain et équipes.</h1>
-  <p class="sub">Pour transformer les décisions en résultats concrets.</p>
-  <p class="role">Directeur Général / COO B2B</p>
+  <section class="left">
+    <p class="eyebrow">Pierre-Arnaud SY</p>
+    <h1>Relier stratégie,<br>terrain et équipes.</h1>
+    <p class="subline">Pour transformer les décisions en résultats concrets.</p>
+    <p class="role">Directeur Général / COO B2B</p>
+  </section>
+  <div class="divider" aria-hidden="true"></div>
+  <section class="diagram" aria-label="Stratégie vers terrain et équipes">
+    <div class="node">STRATÉGIE</div>
+    <div class="arrow">↓</div>
+    <div class="node accent">TERRAIN</div>
+    <div class="arrow">↓</div>
+    <div class="node">ÉQUIPES</div>
+    <p class="diagram-label">Décider · Aligner · Exécuter</p>
+  </section>
 </body>
 </html>
